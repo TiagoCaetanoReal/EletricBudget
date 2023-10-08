@@ -1,0 +1,107 @@
+
+
+
+:root {
+    --nav-icon-width: 100px;
+    --nav-border-width: 15px;
+    --nav_normal_size: 300px;
+    --back-color: whitesmoke; 
+  }
+  
+  html,
+  body {
+    background-color: var(--back-color); 
+    height: 100%;
+    margin: 0; 
+  }
+  
+  .page-container {
+    height: inherit;
+    display: flex; 
+    background: linear-gradient(0deg, rgba(27,20,77,1) 0%, rgba(78,66,169,1) 100%);
+}
+  
+  .main {
+    height: inherit;
+    width: calc(100% - var(--nav_normal_size));
+    padding: 0;
+    padding-left: var(--nav-border-width);
+    overflow-y: auto;
+    
+    background-color: var(--back-color); 
+  } 
+  
+  .main-big-width{
+    width: calc(100% - var(--nav-icon-width));
+  }
+
+  .nav {
+    width: var(--nav_normal_size);
+    height: inherit;
+    position: relative; 
+    background: linear-gradient(0deg, rgba(27,20,77,1) 0%, rgba(78,66,169,1) 100%);
+    transition: width 0;
+    flex-shrink: 0;
+  }
+   
+  .nav--collapsed {
+    width: var(--nav-icon-width);
+  }
+  
+  .nav--collapsed .nav__label {
+    display: none;
+  }
+
+  .nav_collapsed_element {
+    display: none;
+    background-color: black;
+  }
+  
+  
+  .nav__link {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+  }
+  
+  .nav__link:hover {
+    background-color: linear-gradient(90deg, rgb(106, 106, 250) 100%, rgba(78,66,169,1) 10%);;
+  }
+  
+  .nav__icon-container {
+    width:  calc(var(--nav-icon-width) - var(--nav-border-width));
+    height: var(--nav-icon-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .nav__label {
+    white-space: nowrap;
+  }
+  
+  .nav__border {
+    position: absolute;
+    left: calc(100% - var(--nav-border-width));
+    top: 0;
+    width: var(--nav-border-width);
+    height: inherit;
+    background-color: var(--back-color);  
+    
+    border-radius: 20px 0px 0px 20px;
+  }
+  
+  .nav__border:hover {
+    background-color: var(--back-color);
+  }
+
+  .util_icons{
+    color: rgb(209, 209, 209);
+  }
+
+  .app-tittle{
+    color: rgb(226, 192, 2);
+  }
+  
