@@ -1,5 +1,5 @@
-   <!DOCTYPE html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html lang="en" class="">
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,47 +9,52 @@
       <link rel="stylesheet" href="..\static\css\Office.css">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  </head>
+  </head>  
    
-  <body>  
-    <div class="page-container">
+  <body class="h-100">  
+    <div class="page-container ">
 
       <nav class="nav">
-        <div class="nav__border"></div>
         <div class="container">
           <div class="row mt-5 pb-5 pt-2">
             <h2 class="col-8 text-center ms-4 nav_elements app-tittle">EletricBudget</h2>
-            <i class="fa fa-2x fa-bars col-2 util_icons" id="menu_btn"></i>
+            <i class="fa fa-2x fa-bars col-2 util_icons mt-2" id="menu_btn"></i>
           </div>
           <div class="row mt-5 pt-3">
-            <i class="ms-4 fa fa-2x fa-file col-2 text-white-50" id="menu_btn"></i>
+            <i class="ms-4 fa fa-2x fa-file col-2 text-white-50" id=""></i>
             <h4 class="col-5 nav_elements text-white-50">Orçamentos</h4>
           </div>
           <div class="row mt-5 pt-3">
-            <i class="ms-4 fa fa-2x fa-wrench col-2 text-white-50" id="menu_btn"></i>
+            <i class="ms-4 fa fa-2x fa-wrench col-2 text-white-50" id=""></i>
             <h4 class="col-5 nav_elements text-white-50">Serviços</h4>
           </div>
           <div class="row mt-5 pt-3">
-            <i class="ms-3 fa fa-2x fa-users col-2 text-white-50" id="menu_btn"></i>
+            <i class="ms-3 fa fa-2x fa-users col-2 text-white-50" id=""></i>
             <h4 class="col-5  nav_elements text-white-50">Clientes</h4>
           </div>
-          <hr class="mt-5 pt-3 text-white-50 "width="95%">
-          <div class="row mt-5">
-            <i class="ms-3 fa fa-2x fa-gear col-2 text-white-50" id="menu_btn"></i>
+          <hr class="my-5 pt-3 text-white-50 "width="95%">
+          <div class="row mb-5 ">
+            <i class="ms-3 fa fa-2x fa-gear col-2 text-white-50" id=""></i>
             <h4 class="col-5  nav_elements text-white-50">Extras</h4>
-          </div>
-          <div class="row position-absolute bottom-0 mb-5">
-            <div class="col-9">
-              <!-- erro aqui, dependendo do tamanho dos campos a baixo, o logout btn muda de posição -->
-              <h5 class="ms-2 nav_elements text-white">Tiago Caetano</h5> 
-              <h6 class="ms-2 nav_elements text-white">Programador</h6> 
+          </div> 
+          <br>
+          <br>
+          <br>
+          <div class="bottom-element row" id="user_profile">
+            <div class="profile col-9 ms-2">
+                <h5 class="nav_elements text-white">Tiago Caetano</h5> <!-- colocar nº max carac. 15 -->
+                <h6 class="nav_elements text-white">Programador</h6> <!-- colocar nº max carac. 15 -->
             </div>
-            <i class="mt-2 fa fa-2x fa-arrow-right-from-bracket col-2 text-white util_icons" id="logout_btn"></i> 
-          </div>
+            <div class="icon col-2 ">
+              <i class="fa fa-2x fa-arrow-right-from-bracket text-white util_icons" id="logout_btn"></i>
+            </div>
+          </div> 
+           
         </div>
+        <div class="nav__border"></div>
       </nav>
 
-      <main class="main">
+      <main class="main ">
       </main>
     </div> 
   </body>
