@@ -101,7 +101,7 @@ body {
 }
 
 .util_icons{
-  color: rgb(209, 209, 209);
+  color: rgb(255, 255, 255);
 }
 
 .app-tittle{
@@ -120,4 +120,29 @@ body {
 
 .profile{
 position: relative;  
+}
+
+.nav_selected_section { 
+  background: rgb(0,170,255);
+  background: linear-gradient(90deg, rgba(0, 170, 255, 0.219) 24%, rgba(78,66,169,0) 100%);
+  border-radius: 5px 0px 0px 5px;	
+}
+
+.nav_selected_dot {
+  height: 25px;
+  width: 25px;
+  transform: scale(0.5, 0.5);
+  background-color: #0095ff;
+  border-radius: 100%; 
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.nav_selected_ele{
+  color: #ffffff;
+}
+
+
+.nav_unselected_ele{
+  color: #ffffff7b;
 }
