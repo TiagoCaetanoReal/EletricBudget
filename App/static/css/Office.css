@@ -108,7 +108,7 @@ body {
   color: rgb(226, 192, 2);
 }
 
-.bottom-element { 
+.bottom_element_nav { 
   position: absolute;
   top: 90%; 
   width: calc(95% - var(--nav-border-width));
@@ -145,4 +145,42 @@ position: relative;
 
 .nav_unselected_ele{
   color: #ffffff7b;
+}
+
+.budget_waiting::before{  
+  content: "Em Espera"; 
+  color: #bb5d00;
+}
+
+.budget_waiting{ 
+  position: relative; 
+  background-color: #ff9a47b6;
+  border-radius: 15px;
+}
+
+.budget_canceled::before{  
+  content: "Cancelado"; 
+  color: #c50000;
+}
+
+.budget_canceled{ 
+  position: relative; 
+  background-color: #FF6B6B;
+  border-radius: 15px;
+}
+
+.budget_accepted::before{  
+  content: "Aceite"; 
+  color: #17550C;
+}
+
+.budget_accepted{ 
+  position: relative; 
+  background-color: #75FF6B;
+  border-radius: 15px;
+}
+
+.bottom_element_main{ 
+  position: absolute;
+  top: 90%; 
 }
