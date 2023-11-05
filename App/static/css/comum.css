@@ -557,7 +557,7 @@ box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
   border-color: rgba(104, 136, 187, 1);
 }
 
-.form-control{
+.form-control.altered{
   border-top:0px; 
   border-left:0px;
   border-right:0px;
@@ -567,7 +567,7 @@ box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
   color: #040404; 
 } 
 
-.form-control:focus {
+.form-control.altered:focus {
   color: #0b0b0b;
   background-color: #04040400;
   border-color: #000000;
@@ -579,7 +579,7 @@ box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
   font-size: large;
 }
 
-.form-select { 
+.form-select.altered { 
   border-top:0px; 
   border-left:0px;
   border-right:0px;
@@ -589,7 +589,31 @@ box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
   color: #040404; 
 }
  
-.form-select:focus {
+.form-select.altered:focus {
+  border-color: #000000;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
+}
+
+
+.text-bg-transparent{
+  background-color: rgba(255, 255, 255, 0);
+}
+ 
+
+.form-control{
+  border-top:2px solid; 
+  border-left:2px solid;
+  border-right:2px solid;
+  border-bottom: 2px solid; 
+  background-color: whitesmoke;
+  border-radius: 0px 0px 0px 0px;	
+  color: #040404; 
+} 
+
+.form-control:focus {
+  color: #0b0b0b;
+  background-color: #04040400;
   border-color: #000000;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 109, 253, 0);
