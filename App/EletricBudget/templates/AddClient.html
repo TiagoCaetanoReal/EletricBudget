@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--BootStrap 5.2-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="..\static\css\comum.css">
+      <link rel="stylesheet" href="..\static\css\Office.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      
+    </head>  
+   
+  <body class="h-100 ">  
+    <div class="page-container ">
+      <nav class="nav">
+        <div class="container">
+          <div class="row mt-5 pb-5 pt-2">
+            <h2 class="col-8 text-center ms-4 nav_elements app-tittle">EletricBudget</h2>
+            <div class="col-2 util_icons mt-1" id="menu_btn_div">  
+              <i class="fa fa-2x fa-bars" id="menu_btn"></i>
+            </div>
+          
+          </div>
+          <div class="row mt-5 py-3">
+            <i class="" id="budgetDot"></i>
+            <i class="ms-4 fa fa-2x fa-file col-2 nav_unselected_ele" id=""></i>
+            <h4 class="col-5 nav_elements nav_unselected_ele">Orçamentos</h4>
+          </div>
+          <div class="row mt-5 py-3 ">
+            <i class="" id="serviceDot"></i>
+            <i class="ms-4  fa fa-2x fa-wrench col-2 nav_unselected_ele" id=""></i>
+            <h4 class="col-5 nav_elements nav_unselected_ele">Serviços</h4>
+          </div>
+          <div class="row mt-5 py-3 nav_selected_section">
+            <i class="nav_selected_dot" id="clientDot"></i>
+            <i class="ms-1 ps-0 fa fa-2x fa-users col-2 nav_selected_ele" id=""></i>
+            <h4 class="col-5 nav_elements nav_selected_ele">Clientes</h4>
+          </div>
+          <hr class="my-5 py-3 text-white-50 "width="95%">
+          <div class="row mb-5 ">
+            <i class="" id="extraDot"></i>
+            <i class="ms-3 fa fa-2x fa-gear col-2 nav_unselected_ele" id=""></i>
+            <h4 class="col-5  nav_elements nav_unselected_ele">Extras</h4>
+          </div> 
+          <br>
+          <br>
+          <br>
+          <div class="bottom_element_nav row" id="user_profile">
+            <div class="profile col-9 ms-2">
+                <h5 class="nav_elements util_icons">Tiago Caetano</h5> <!-- colocar nº max carac. 15 -->
+                <h6 class="nav_elements util_icons">Programador</h6> <!-- colocar nº max carac. 15 -->
+            </div>
+            <div class="icon col-2 mt-2">
+              <i class="fa fa-2x fa-arrow-right-from-bracket util_icons" id="logout_btn"></i>
+            </div>
+          </div> 
+           
+        </div>
+        <div class="nav__border"></div>
+      </nav>
+
+      <main class="main">
+        <div class="row mt-3 position-relative">
+          <h2 class="text-black"><strong>Criar Cliente</strong></h2>
+        </div> 
+        <br>
+        <br> 
+        <div class="container-fluid g-0 mx-0 w-100 position-relative">
+          <div class="row">
+            <div class="col-8 col-md-6 col-lg-4 mt-3 ms-2">
+              <h4 class="text-black-50 mb-0">Nome:</h4> 
+              <input class="form-control altered w-75 form_text_size" type="text" id="clientName" max="20"> 
+            </div>
+            <div class="col-8 col-md-5 col-lg-4 mt-3 ms-2">
+              <h4 class="text-black-50 mb-0">Contacto:</h4> 
+              <input class="form-control altered w-75 form_text_size" type="text" id="clientPhone" max="9"> 
+            </div>
+          </div>  
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-12 ms-2">
+              <h4 class="text-black-50 mb-0">Morada:</h4> 
+              <input class="form-control altered w-75 form_text_size" type="text" id="clientName" max="20"> 
+            </div> 
+          </div> 
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-8 col-md-6 col-lg-4 mt-3 ms-2">
+              <h4 class="text-black-50 mb-0">Código Postal:</h4> 
+              <input class="form-control altered w-75 form_text_size" type="text" id="clientName" max="9"> 
+            </div>
+            <div class="col-5 col-md-4 col-lg-3 mt-3">
+              <h4 class="text-black-50 mb-0">Localidade</h4> 
+              <select class="form-select altered w-75 form_text_size" type="text" id="clientName"> 
+                <option value="0">Todas</option> 
+              </select>
+            </div>
+          </div>   
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-8 col-md-6 col-lg-4 mt-3 ms-2">
+              <h4 class="text-black-50 mb-0">Contribuinte:</h4> 
+              <input class="form-control altered w-75 form_text_size" type="text" id="clientName" max="9"> 
+            </div> 
+          </div>  
+        </div> 
+        <div class="bottom_element_main justify-content-end row w-100 end-0 me-2">
+          <div class="col-2 col-sm-5 col-md-2 col-lg-2  text-center">
+            <button class="btn btn-outline-success rounded-3 w-100" id="" type="submit">
+              <i class="fa fa-circle-check"></i>
+              Aprovar
+            </button>
+          </div>
+          <div class="col-2 col-sm-5 col-md-2 col-lg-2 text-center">
+            <button class="btn btn-outline-danger rounded-3 w-100" id="" type="submit">
+              <i class="fa fa-circle-xmark"></i>
+              Cancelar
+            </button>
+          </div> 
+        </div>
+      </main>
+    </div> 
+  </body> 
+  <script src="../static/js/sideBar.js"></script>
+  <script>
+     const myModal = new bootstrap.Modal(document.getElementById('saveDeleteMap'));
+    const myModalTitle = new bootstrap.Modal(document.getElementById('saveDeleteMapTitle'));
+  </script>
+</html>
