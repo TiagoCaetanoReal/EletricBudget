@@ -1,6 +1,6 @@
 "# EletricBudget" 
 Projeto para auxilio da criação de orçamentos para eletricistas.
-Esta ferramenta será uma webapp, logo só poderá ser acedida e utilizada se o utilizar tiver internet.
+Esta ferramenta será uma webapp, logo só poderá ser acedida e utilizada se existir acesso á internet.
 
 Nela, o utilizador poderá:
   Registar-se indicando o seu Nome, Apelido, Password, Confirmação Password, Email e Contacto 
