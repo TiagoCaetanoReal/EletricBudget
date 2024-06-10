@@ -18,4 +18,4 @@ def doLogin():
 @AutenticationModule.route('/register')
 def doRegister():
     print("hello")
-    return render_template('LoginUser.html', title='Login')
+    return render_template('RegisterUser.html', title='Login')

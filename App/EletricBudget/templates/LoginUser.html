@@ -1,5 +1,5 @@
 {% extends 'IndexAuth.html' %}
- 
+
 {% block title %}
 <h2 class="text-center my-4"><strong>Iniciar Sessão</strong></h2>
 {% endblock title %}
@@ -10,35 +10,37 @@
     <div class="col-1 col-md-2"></div>
     <fieldset class="my-2 col-10 col-md-8">
         <div class="from-group">
-             <Label>Nome de Utilizador</Label>
+            <Label>Nome de Utilizador</Label>
             <div class="input-group my-1 py-2" id="groupPass">
-                <input type="text" class="form-control altered rounded rounded-3" placeholder="Tiago" aria-label="Username">
-             </div> 
-        </div> 
-    </fieldset> 
-</div> 
+                <input type="text" class="form-control  rounded rounded-3" placeholder="Tiago" aria-label="Username">
+            </div>
+        </div>
+    </fieldset>
+</div>
 
 <div class="row">
     <div class="col-1 col-md-2"></div>
     <fieldset class="my-2 col-10 col-md-8">
         <div class="from-group">
-             <Label>Password</Label>
+            <Label>Password</Label>
             <div class="input-group my-1 py-2" id="groupPass">
-                <input type="text" class="form-control altered rounded rounded-3" placeholder="**************" aria-label="Username">
-             </div> 
-        </div> 
-    </fieldset> 
+                <input type="text" class="form-control  rounded rounded-3" placeholder="**************"
+                    aria-label="Username">
+            </div>
+        </div>
+    </fieldset>
 </div>
- 
+
 <div class="row pb-4">
     <div class="col-3"></div>
-    <button class="btn btn-primary my-2 col-6", id="LogBtn"><strong>Entrar</strong></button> 
+    <button class="btn btn-primary my-2 col-6" , id="LogBtn"><strong>Entrar</strong></button>
     <div class="col-3"></div>
     <div class="col-3"></div>
     <div class="col-3"><a href="{{url_for('AutenticationModule.doRegister')}}">
-        <h6><dt>Sem Conta?</dt></h6>
-    </a></div>
-  
-</div> 
+            <h6>
+                <dt>Sem Conta?</dt>
+            </h6>
+        </a></div>
+
+</div>
 {% endblock formulary %}
-    

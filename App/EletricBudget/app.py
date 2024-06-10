@@ -4,6 +4,9 @@ from flask_babel import Babel
 # from models import db, bcrypt, Cliente
 
 from  AutenticationModule import AutenticationModule
+from  BudgetModule import BudgetModule
+from  ClienteModule import ClienteModule
+from  ServiceModule import ServiceModule
 # from frontOffice.StoreClientModule import StoreClientModule
 
 def create_app(config_filename):
@@ -25,6 +28,9 @@ def create_app(config_filename):
 	# 	return Cliente.query.get(int(user_id))
 
 	app.register_blueprint(AutenticationModule)
+	app.register_blueprint(BudgetModule)
+	app.register_blueprint(ClienteModule)
+	app.register_blueprint(ServiceModule)
 	# app.register_blueprint(StoreClientModule)
 
 	babel = Babel(app)
