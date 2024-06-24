@@ -6,9 +6,9 @@ from flask_login import login_user, logout_user, current_user
 
 ServiceModule = Blueprint("ServiceModule", __name__)
 
-# @ServiceModule.route('/budgetList')
-# def index():
-#     return render_template('BudgetList.html', title='Login')
+@ServiceModule.route('/serviceList')
+def seeServiceList():
+    return render_template('ServiceList.html', title='Login')
 
 # @ServiceModule.route('/budgetAdd')
 # def doLogin():

@@ -7,6 +7,7 @@ from  AutenticationModule import AutenticationModule
 from  BudgetModule import BudgetModule
 from  ClienteModule import ClienteModule
 from  ServiceModule import ServiceModule
+from ExtrasModule import ExtrasModule
 # from frontOffice.StoreClientModule import StoreClientModule
 
 def create_app(config_filename):
@@ -31,6 +32,7 @@ def create_app(config_filename):
 	app.register_blueprint(BudgetModule)
 	app.register_blueprint(ClienteModule)
 	app.register_blueprint(ServiceModule)
+	app.register_blueprint(ExtrasModule)
 	# app.register_blueprint(StoreClientModule)
 
 	babel = Babel(app)
